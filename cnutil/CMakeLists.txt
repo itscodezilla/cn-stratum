@@ -6,19 +6,19 @@ find_package(Boost COMPONENTS thread system program_options date_time filesystem
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -D_GNU_SOURCE")
 
 include_directories(${Boost_INCLUDE_DIRS})
-include_directories("${MONERO_DIR}/contrib/epee/include")
-include_directories("${MONERO_DIR}/src")
-include_directories("${MONERO_DIR}/external/easylogging++")
+include_directories("${MASARI_DIR}/contrib/epee/include")
+include_directories("${MASARI_DIR}/src")
+include_directories("${MASARI_DIR}/external/easylogging++")
 
 link_directories(
-    ${MONERO_DIR}/src/cryptonote_core
-    ${MONERO_DIR}/src/cryptonote_basic
-    ${MONERO_DIR}/src/crypto
-    ${MONERO_DIR}/src/common
-    ${MONERO_DIR}/src/ringct
-    ${MONERO_DIR}/src/blockchain_db
-    ${MONERO_DIR}/external/easylogging++
-    ${MONERO_DIR}/contrib/epee/src
+    ${MASARI_DIR}/src/cryptonote_core
+    ${MASARI_DIR}/src/cryptonote_basic
+    ${MASARI_DIR}/src/crypto
+    ${MASARI_DIR}/src/common
+    ${MASARI_DIR}/src/ringct
+    ${MASARI_DIR}/src/blockchain_db
+    ${MASARI_DIR}/external/easylogging++
+    ${MASARI_DIR}/contrib/epee/src
 )
 
 # Build library

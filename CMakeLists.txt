@@ -1,12 +1,12 @@
 cmake_minimum_required (VERSION 2.8.11)
 project(pool)
 
-if (DEFINED ENV{MONERO_DIR})
-    get_filename_component(MONERO_DIR $ENV{MONERO_DIR} ABSOLUTE)
-    message("Using Monero source from env ${MONERO_DIR}")
+if (DEFINED ENV{MASARI_DIR})
+    get_filename_component(MASARI_DIR $ENV{MASARI_DIR} ABSOLUTE)
+    message("Using Masari source from env ${MASARI_DIR}")
 else()
-    get_filename_component(MONERO_DIR "${CMAKE_SOURCE_DIR}/../monero" ABSOLUTE)
-    message("Monero surce directory is not defined, using default ${MONERO_DIR}")
+    get_filename_component(MASARI_DIR "${CMAKE_SOURCE_DIR}/../masari" ABSOLUTE)
+    message("Masari surce directory is not defined, using default ${MASARI_DIR}")
 endif()
 
 add_subdirectory(hashing)
