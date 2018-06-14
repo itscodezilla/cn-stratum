@@ -1,7 +1,7 @@
 {
 	"address": "YOUR-ADDRESS-NO-EXCHANGE",
 	"bypassAddressValidation": true,
-	"bypassShareValidation": true,
+	"bypassShareValidation": false,
 
 	"threads": 2,
 
@@ -9,10 +9,10 @@
 	"luckWindow": "24h",
 	"largeLuckWindow": "72h",
 
-	"blockRefreshInterval": "1s",
+	"blockRefreshInterval": "2s",
 
 	"stratum": {
-		"timeout": "15m",
+		"timeout": "60m",
 
 		"listen": [
 			{
@@ -50,7 +50,7 @@
 		{
 			"name": "Main",
 			"host": "127.0.0.1",
-			"port": 18081,
+			"port": 28981,
 			"timeout": "10s"
 		}
 	],
